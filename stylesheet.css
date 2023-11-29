@@ -1,0 +1,130 @@
+/*google fonts import below*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@300&display=swap');
+/*I used the uninversal selector to reset padding and margin of the page to default and also to apply imported fonts to all my content */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+    
+   
+}
+/*CSS applied to the header elements to imitate Active Consultancy website design*/
+#logo{
+    background-color:#4472C4;
+    border-bottom: 15px solid #FF3F8D;;
+    
+
+}
+img{
+    width: 8%;
+}
+/*Styles applied to div holding all of the input boxes */
+.container{
+width:100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 3rem;
+
+
+
+}
+/*css applied to form within our container div*/
+.container form{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    
+    
+}
+/*div holding the message box and submit button*/
+.msg-box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*targetting the smaller divs holding our input boxes  */
+#name-input,#contact-details, #avail-dates{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    background-color: white;
+}
+
+
+/*Submission button styling & hover effect*/
+#submitbtn{
+    margin-bottom: 30px;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    background-color: #FF3F8D;;
+    color: white;
+    font-weight:bold ;
+  
+}
+#submitbtn:hover {
+    background-color: white;
+    color: #FF3F8D;
+    cursor: pointer;
+}
+/*styling input boxes size and text size*/
+.input-box{
+    height: 7vh;
+    width: 30vw;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    background-color: white;
+}
+/*labels size and position */
+.labels{
+    font-size: 1.3rem;
+    padding: 5px;
+}
+/*span was used to target the asterisk at the end of compulsory fields*/
+span{
+    color: red;
+}
+/*styling the message box text area*/
+textarea{
+    width: 70%;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    color: black;
+    background: white;
+    border-radius: .8rem;
+    margin: .7rem 0;
+    resize: none;
+}
+/*heading above message box */
+h3{
+    margin-top: 100px;
+}
+/*top heading and intro paragraph*/
+#intro-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 10px;
+    
+}
+p{
+   font-size: 1rem;
+   width: 95%;
+  
+}

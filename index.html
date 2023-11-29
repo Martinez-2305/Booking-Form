@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Active Consulatancy Promotion</title>
+    <link rel="icon" href="active icon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="logo"><img src="active logo.jpg" alt="" /></div>
+
+    <div class="container">
+      <div id="intro-holder">
+        <h2>Booking Form</h2>
+        <p>
+          Welcome, esteemed confectionery enthusiasts and lucky winners of our
+          sweetest promotion yet! We are thrilled to extend our heartfelt
+          congratulations to the 100 fortunate individuals who have secured the
+          golden ticket to a high-flying adventure. As a token of our
+          appreciation, each winner now has the exclusive opportunity to take to
+          the skies with a complimentary flying lesson. To ensure a smooth and
+          seamless experience, we invite you to share your details through our
+          online booking form below. Rest assured, our dedicated in-house team
+          will handle the rest, ensuring that your soaring adventure is
+          scheduled with the utmost care and attention. Get ready to elevate
+          your confectionery joy to new heights – buckle up for an unforgettable
+          journey!
+        </p>
+      </div>
+      <form id="booking-form" action="/" onsubmit="return validateForm()">
+        <!--First Name & Surname input boxes placed within a div for structure -->
+        <div id="name-input">
+          <label for="Forename" class="labels">First Name<span>*</span></label>
+          <input
+            type="name"
+            placeholder="First Name"
+            id="firstname"
+            class="input-box"
+            type="text"
+            required
+          /><label for="Surname" class="labels">Surname<span>*</span></label>
+          <input
+            type="name"
+            placeholder="Surname"
+            id="surname"
+            class="input-box"
+            type="text"
+            required
+          />
+          <label for="DOB" class="labels">Date of Birth<span>*</span></label>
+          <input type="date" id="dob" class="input-box" type="date" required />
+        </div>
+        <!--Email, Phone number & DOB input box div 
+        -->
+        <div id="contact-details">
+          <label for="email" class="labels">Email<span>*</span></label>
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            class="input-box"
+            type="email"
+            required
+          />
+
+          <label for="phone-number" class="labels">Contact Number</label>
+          <input
+            type="tel"
+            name="phone-number"
+            placeholder="Mobile Number"
+            id="contact-number"
+            class="input-box"
+            type="number"
+          />
+          <!--First,second & third date preference box -->
+          <label for="FirstDate" class="labels"
+            >First Date Preference<span>*</span></label
+          >
+          <input
+            type="date"
+            id="firstDate"
+            class="input-box"
+            type="date"
+            required
+          />
+        </div>
+
+        <div id="avail-dates">
+          <label for="SecondDate" class="labels"
+            >Second Date Preference<span>*</span></label
+          >
+          <input
+            type="date"
+            name="SecondDate"
+            id="secondDate"
+            class="input-box"
+            type="date"
+            required
+          />
+
+          <label for="ThirdDate" class="labels">Third Date Preference</label>
+          <input
+            type="date"
+            id="thirdDate"
+            name="ThirdDate"
+            class="input-box"
+            type="date"
+          />
+        </div>
+
+        <!--Submit button& Message box -->
+
+        <div class="msg-box">
+          <h3>Your Message</h3>
+          <textarea
+            name="Message"
+            placeholder="Type a message for any additonal queries"
+            cols="50"
+            rows="20"
+          ></textarea>
+          <div><input type="submit" value="Submit" id="submitbtn" /></div>
+        </div>
+      </form>
+      <p id="thankYouMessage">Thanks for submitting your form!</p>
+    </div>
+  </body>
+</html>
